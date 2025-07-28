@@ -28,10 +28,11 @@ public class EmployeeManager {
             String sql = "delete from employee where id = ?";
             DBUtil.executeLine(sql, id);
             System.out.println("Employee removed.");
-        } catch (Exception e) {
+        } catch (SQLException e) {
             throw new RuntimeException(e.getMessage());
         }
 
     }
+    
 
 }
