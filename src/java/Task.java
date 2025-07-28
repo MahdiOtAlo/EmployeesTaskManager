@@ -1,12 +1,26 @@
 public class Task {
     private int id;
-    private  String description;
-    private  double estimateHour;
+    private String description;
+    private double estimateHour;
+    private int employeeID;
 
     public Task(int id, String description, double estimateHour) {
         this.id = id;
         this.description = description;
         this.estimateHour = estimateHour;
+    }
+
+    public Task(int id, String description, double estimateHour, int employeeID) {
+        this(id, description, estimateHour);
+        this.employeeID = employeeID;
+    }
+
+    public int getEmployeeID() {
+        return employeeID;
+    }
+
+    public void setEmployeeID(int employeeID) {
+        this.employeeID = employeeID;
     }
 
     public int getId() {
