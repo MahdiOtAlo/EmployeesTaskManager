@@ -14,7 +14,7 @@ public class TaskManager {
     }
 
     public static void updateTask(String description, double estimateHour, int employeeID, int id) {
-        validateTask(new Task(id,description,estimateHour));
+        validateTask(new Task(id, description, estimateHour));
         try {
             String sql = "update tasks set description = ?, estimate_time = ?, employee_id = ? where id = ?";
             DBUtil.executeLine(sql, description, estimateHour, employeeID, id);
@@ -45,5 +45,4 @@ public class TaskManager {
             throw new InvalidTaskException("Task estimated hours must be positive.");
         }
     }
-
 }

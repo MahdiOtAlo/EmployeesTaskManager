@@ -19,13 +19,13 @@ public class Task {
         return employeeID;
     }
 
-    public void setEmployeeID(int employeeID) {
-        this.employeeID = employeeID;
-    }
+//    public void setEmployeeID(int employeeID) {
+//        this.employeeID = employeeID;
+//    }
 
-    public int getId() {
-        return id;
-    }
+//    public int getId() {
+//        return id;
+//    }
 
     public String getDescription() {
         return description;
@@ -35,12 +35,22 @@ public class Task {
         return estimateHour;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
-    }
+//    public void setDescription(String description) {
+//        this.description = description;
+//    }
+//
+//    public void setEstimateHour(double estimateHour) {
+//        this.estimateHour = estimateHour;
+//    }
 
-    public void setEstimateHour(double estimateHour) {
-        this.estimateHour = estimateHour;
+    @Override
+    public String toString() {
+        return "Task{" +
+                "id=" + id +
+                ", description='" + description + '\'' +
+                ", estimateHour=" + estimateHour +
+                ", employeeID=" + employeeID +
+                '}';
     }
 }
 
