@@ -26,12 +26,12 @@ public class App {
 
 
 
-        Task task1Employee3 = new Task(6, "Lead team meeting", 3.5, employee3.getId());
-        Task task2Employee3 = new Task(7, "Train squad", 7.5, employee3.getId());
-        Task task3Employee3 = new Task(8, "Plan defense strategy", 6.0, employee3.getId());
-        Task task4Employee3 = new Task(9, "Inspect equipment", 2.5, employee3.getId());
+        Task task1Employee3 = new Task(5, "Lead team meeting", 3.5, employee3.getId());
+        Task task2Employee3 = new Task(6, "Train squad", 7.5, employee3.getId());
+        Task task3Employee3 = new Task(7, "Plan defense strategy", 6.0, employee3.getId());
+        Task task4Employee3 = new Task(8, "Inspect equipment", 2.5, employee3.getId());
         System.out.println(task4Employee3);
-//        TaskManager.updateTask("Motivate team", 1.5, 3, 9);
+
 
 
         TaskManager.removeTask(5);
@@ -46,6 +46,8 @@ public class App {
         TaskManager.addTask(task2Employee3);
         TaskManager.addTask(task3Employee3);
         TaskManager.addTask(task4Employee3);
+
+        TaskManager.updateTask("Motivate team", 1.5, 3, 8);
 
 
 

@@ -1,7 +1,6 @@
 import java.sql.*;
 
 public class DBUtil {
-    private static int[] updateCounts;
 
     public static Connection getConnection() throws SQLException {
         String url = "jdbc:postgresql://localhost:5432/employee_task_manager";
